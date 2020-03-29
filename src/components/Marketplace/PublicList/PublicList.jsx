@@ -3,6 +3,9 @@ import styles from "./PublicList.module.scss";
 
 import CurrentProduct from "../../Marketplace/CurrentProduct/";
 import SearchBar from "../SearchBar/SearchBar";
+import { Link } from "@reach/router";
+
+import ProductProfile from "../ProductProfile/";
 
 export default class PublicList extends Component {
 
@@ -67,16 +70,31 @@ export default class PublicList extends Component {
                     <SearchBar before={this.props.newSearch} after={this.resultOfSearch} />
                 </div>
 
-                {this.state.loading || !this.state.product ? (
-                    <div>loading...</div>
-                ) : (
-                        <div className={styles.catalogueContain}>
-                            {this.state.filteredProduct.map((something, index) => (
-                                <CurrentProduct productData={something} key={index} />
-                            ))}
-                        </div>
-                    )
-                }
+                <div>
+                    {this.state.loading || !this.state.product ? (
+                        <div>loading...</div>
+                    ) : (
+                            <div className={styles.catalogueContain}>
+                                {this.state.filteredProduct.map((something, index) => (
+
+                                    <div className={styles.bagel}>
+                                        <Link to={"/productprofile"} >
+                                            <CurrentProduct productData={something} key={index} />
+                                        </Link>
+                                    </div>
+                                    // ,
+
+                                    // <div className={styles.proProfile}>
+                                    //     <ProductProfile productData2={something} key={index}/>
+                                    // </div>
+
+                                ))}
+                            </div>
+                        )
+                    }
+                </div>
+
+
             </section>
         )
     }

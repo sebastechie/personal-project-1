@@ -11,6 +11,7 @@ import PrivateRoutes from "./PrivateRoutes";
 // import MarketListUpcoming from "../components/Marketplace/Upcoming/MarketListUpcoming";
 import Upcoming from "../components/Marketplace/PrivateList/";
 import firebase, { providers } from "../firebase";
+import ProductProfile from "../components/Marketplace/ProductProfile/ProductProfile";
 
 
 export default class Routes extends Component {
@@ -42,6 +43,7 @@ export default class Routes extends Component {
                 <Gallery path="gallery"/>
                 <Marketplace path="marketplace" signIn={this.signIn}/>
                 <Contact path="contact"/>
+                <ProductProfile path="productprofile" />
                 
 
                 <PrivateRoutes path="private" user={this.state.user}>

@@ -14,6 +14,7 @@ export default class Navbar extends Component {
                     <NavItem route="/gallery" name="Gallgalls" />
                     <NavItem route="/marketplace" name="KETKET" />
                     <NavItem route="/contact" name="Contact" />
+                    {/* <NavItem route="/productprofile" name="Profile temp" /> */}
                 </div>
 
                 <div className={styles.logoContain}>
