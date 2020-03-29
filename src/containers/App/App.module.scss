@@ -1,0 +1,27 @@
+.App {
+  border: 2px dashed red;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  // position: relative;
+
+  .sideFill {
+    display: flex;
+    justify-content: flex-end;
+    height: 90%;
+    width: 100%;
+    border: 2px solid grey;
+    // z-index: -1;
+    // position: fixed;
+
+    .fillItems {
+      border: 2px solid aqua;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

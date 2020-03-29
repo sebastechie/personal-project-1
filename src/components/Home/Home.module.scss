@@ -1,0 +1,117 @@
+@import "../../static/variables";
+
+.homey {
+    // color: blue;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+    .introContain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imgLeft, .imgMid, .imgRight {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 450px;
+            width: 300px;
+        }
+
+        .imgLeft {
+            //border: 2px solid red;
+            background-image: url("../../static/images/img2.jpeg");
+        }
+        
+        .imgMid {
+            //border: 2px solid orange;
+            background-image: url("../../static/images/img1.jpeg");
+            height: 600px;
+            width: 400px;
+        }
+        
+        .imgRight {
+            //border: 2px solid red;
+            background-image: url("../../static/images/sh9.jpeg");
+
+        }
+    }
+
+    .introText {
+        //border: 2px solid aqua;
+        color: $primary;
+        text-align: center;
+        font-size: 25px;
+
+        p:nth-child(1) {
+            margin: 10px;
+            font-family: $font-stack1;
+        }
+
+        p:nth-child(2) {
+            margin: 0;
+            color: $secondary;
+            font-family: $font-stack1;
+            font-size: 19px;
+        }
+    }
+
+    .homeBody {
+        // border: 2px solid red;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 280px 0 200px 0;
+
+        .imgBody {
+            //border: 2px solid red;
+            background-image: url("../../static//images/img5.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 380px;
+            width: 300px;
+            margin-right: 5%;
+            transition: 1s;
+            opacity: 0.5;
+
+            &:hover {
+                // filter: grayscale(100%);
+                opacity: 1;
+                transition: 1s;
+            }
+        }
+
+        .textBody {
+            //border: 2px solid pink;
+            display: flex;
+            flex-direction: column;            
+            width: 35%;
+
+            div:nth-child(1) {
+                // color: red;
+                margin: 40px 0;
+                font-size: $heading1-size;
+                font-family: $font-stack1;
+            }
+            
+            div:nth-child(2) {
+                line-height: 1.9;
+                font-size: $subheading2-size;
+                font-family: $font-stack2;
+            }
+        }
+    }
+
+    .midBanner {
+        border: 2px solid red;
+        height: 100px;
+        // width: 2000px;
+        left: 0;
+        top: 0;
+        position: relative;
+    }
+}

@@ -1,0 +1,25 @@
+@import "../../static/variables";
+
+.navContain {
+    border: 2px solid blue;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $global-margin;
+    font-family: $font-stack1;
+    
+    // position: fixed;
+    // width: 100%;
+    // top: 0;
+    // transition: top 0.3s;
+    
+    .itemContain {
+        border: 2px solid black;
+        display: flex;
+    }
+
+    .logoContain {
+        font-size: $heading1-size;
+    }
+}

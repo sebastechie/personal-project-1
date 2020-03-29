@@ -1,0 +1,12 @@
+@import "../../static/variables";
+
+.marketplaceContain {
+    border: 2px solid blue;
+    background-color: red;
+    height: 200%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: pink;
+}
