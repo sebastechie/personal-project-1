@@ -7,11 +7,24 @@
     }
 
     .catalogueContain {
-        border: 2px solid yellow;
+        border: 2px solid black;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        flex-direction: row;        
+        background-color: gray;
+        // flex-direction: row;   
+        // align-items: center;     
+
+        .loader {
+            border: 2px solid blue;
+            height: 100vh;
+            // width: 100px;
+
+            // img {
+            //     height: 100%;
+            //     width: 100%;
+            // }
+        }
     }
 
     p {
