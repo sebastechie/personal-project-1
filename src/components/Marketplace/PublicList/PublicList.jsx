@@ -3,25 +3,11 @@ import styles from "./PublicList.module.scss";
 
 import CurrentProduct from "../../Marketplace/CurrentProduct/";
 import SearchBar from "../SearchBar/SearchBar";
-import { Link } from "@reach/router";
+import { navigate } from "@reach/router";
 
 import ProductProfile from "../ProductProfile/";
 
 export default class PublicList extends Component {
-
-    // create state for api url
-    // create new array state to store api 
-    // state = {
-    //     // url:
-    //     APIList: []
-    // }
-
-
-    //do compondeddidmount just like when you render from firebase
-    // componentDidMount() {
-    //     fetch(this.state.)
-
-    // }
 
     state = {
         url: ("http://makeup-api.herokuapp.com/api/v1/products.json"),
@@ -60,6 +46,11 @@ export default class PublicList extends Component {
         this.setState({ filteredProduct: filteredProduct });
     }
 
+    handleChange = (value) => {
+        navigate(`productprofile/${value}`)
+        // fetch(http://makeup-api.herokuapp.com/api/v1/products/${id}.json)
+}
+
     render() {
         // console.log(this.state.newSearch);
         // console.log(this.state.charTyped);
@@ -77,24 +68,14 @@ export default class PublicList extends Component {
                             <div className={styles.catalogueContain}>
                                 {this.state.filteredProduct.map((something, index) => (
 
-                                    <div className={styles.bagel}>
-                                        <Link to={"/productprofile"} >
+                                    <div className={styles.bagel} onClick={() => this.handleChange(something.id)} >
                                             <CurrentProduct productData={something} key={index} />
-                                        </Link>
                                     </div>
-                                    // ,
-
-                                    // <div className={styles.proProfile}>
-                                    //     <ProductProfile productData2={something} key={index}/>
-                                    // </div>
-
                                 ))}
                             </div>
                         )
                     }
                 </div>
-
-
             </section>
         )
     }
