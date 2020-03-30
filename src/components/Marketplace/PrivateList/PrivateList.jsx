@@ -53,18 +53,24 @@ export default class MarketListUpcoming extends Component {
         return (
             <section className={styles.marketListContain}>
 
-                <div>
-                    <SearchBar before={this.props.newSearch} after={this.resultOfSearch} />
+                <div className={styles.searchContain}>
+                    <div>
+                        <SearchBar before={this.props.newSearch} after={this.resultOfSearch} />
+                    </div>
+
+                    <div className={styles.listHeader}>
+                        <span>VIP</span> // SEE THE LIST BELOW THE UPCOMING RELEASES
+                    </div>
                 </div>
 
-                <div className={styles.listHeader}>
-                    SEE THE LIST BELOW THE UPCOMING RELEASES
-                </div>
+                <div className={styles.listContain}>
 
-                <div className={styles.catalogueContain}>
-                    {this.state.filteredProduct.map((item, index) => (
-                        <UpcomingProduct data={item} key={index} />
-                    ))}
+                    <div className={styles.catalogueContain}>
+                        {this.state.filteredProduct.map((item, index) => (
+                            <UpcomingProduct data={item} key={index} />
+                        ))}
+                    </div>
+
                 </div>
 
 

@@ -1,23 +1,57 @@
+@import "../../../static/variables";
+
+
+
 .publicListContain {
-    border: 2px solid greenyellow;
+    // border: 2px solid greenyellow;
     width: 100%;
+    // min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 
     .searchContain {
-        border: 2px solid aqua;
+        // border: 2px solid aqua;
+        display: flex;
+        justify-content: flex-end;
+        margin: $global-margin - 50px 0;
+
+    }
+
+    .innerContain {
+        // border: 2px solid red;
+        // height: 500px;
+        
+        .loadContain {
+            // border: 2px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            padding: 0 40%;
+
+            .load {
+                transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+                padding-bottom: 15px;
+            }
+
+            .load2 {
+            // border: 2px solid green;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("../../../static/images/load2.gif");
+            }
+        }
     }
 
     .catalogueContain {
-        border: 2px solid black;
+        // border: 2px solid black;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        background-color: gray;
-        // flex-direction: row;   
-        // align-items: center;    
 
-        // .bagel {
-        //     display: contents;
-        // }
         
         .proProfile {
             // display: none;
@@ -26,7 +60,7 @@
         }
 
         .loader {
-            border: 2px solid blue;
+            // border: 2px solid blue;
             height: 100vh;
             // width: 100px;
 

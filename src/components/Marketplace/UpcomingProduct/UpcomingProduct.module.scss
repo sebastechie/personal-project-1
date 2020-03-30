@@ -1,8 +1,33 @@
 .productContain {
-    color: black;
-    border: 2px solid orange;
+    
+    // border: 2px solid orange;
+    margin: 30px;
+
+    height: 150px;
+    width: 350px;
+    border: 0.5px solid black;
     display: flex;
-    background-color: yellow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+    .name {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    &:hover {
+        transition: 0.5s;
+        color: white;
+        cursor: pointer;
+        background-color: #141414}
+
+        
+
+
+
+
 
 
 }

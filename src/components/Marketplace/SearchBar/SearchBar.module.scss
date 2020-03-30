@@ -1,0 +1,30 @@
+@import "../../../static/variables";
+
+.searchContain {
+    // border: 2px solid yellow;
+    // transition: 2s;
+
+    .search {
+        width: 320px;
+        height: 30px;
+        font-size: 18px;
+        font-family: $font-stack2;
+        background: none;
+        border-style: none;
+        border-bottom: 0.5px solid black;
+    }
+
+    input:focus {
+        outline:none;
+    }
+
+    ::placeholder {
+        font-family: $font-stack2;
+        font-size: 18px;
+    }
+
+    :active {
+        border-bottom-color: red;
+        transition: 2s;
+    }
+}

@@ -49,7 +49,7 @@ export default class PublicList extends Component {
     handleChange = (value) => {
         navigate(`productprofile/${value}`)
         // fetch(http://makeup-api.herokuapp.com/api/v1/products/${id}.json)
-}
+    }
 
     render() {
         // console.log(this.state.newSearch);
@@ -61,15 +61,18 @@ export default class PublicList extends Component {
                     <SearchBar before={this.props.newSearch} after={this.resultOfSearch} />
                 </div>
 
-                <div>
+                <div className={styles.innerContain}>
                     {this.state.loading || !this.state.product ? (
-                        <div>loading...</div>
+                        <div className={styles.loadContain}>
+                            <div className={styles.load}>loading...</div>
+                            <div className={styles.load2}></div>
+                        </div>
                     ) : (
                             <div className={styles.catalogueContain}>
                                 {this.state.filteredProduct.map((something, index) => (
 
                                     <div className={styles.bagel} onClick={() => this.handleChange(something.id)} >
-                                            <CurrentProduct productData={something} key={index} />
+                                        <CurrentProduct productData={something} key={index} />
                                     </div>
                                 ))}
                             </div>

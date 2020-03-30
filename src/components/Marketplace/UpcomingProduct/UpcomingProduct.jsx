@@ -10,14 +10,14 @@ export default class UpcomingProduct extends Component {
                 {/* <div className={styles.image}>
                     {this.props.data.image}
                 </div> */}
-                <div className={styles}>
+                <div className={styles.name}>
                     {this.props.data.name}
                 </div>
                 <div className={styles.style}>
                     {this.props.data.style}
                 </div>
                 <div className={styles.price}>
-                    {this.props.data.price}
+                    £{this.props.data.price}
                 </div>
             </section>
         )

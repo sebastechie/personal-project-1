@@ -5,7 +5,9 @@ export default class Gallery extends Component {
     render() {
         return(
             <section className={styles.galleryContain}>
-                GALLERY PAGE HERE! kasjg asd lorem50 aksdh asldh 
+                <div className={styles.innerContain}>
+                    <div><p>COMING SOON...</p></div>
+                </div>
             </section>
         )
     }

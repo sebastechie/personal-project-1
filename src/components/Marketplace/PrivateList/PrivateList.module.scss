@@ -1,14 +1,43 @@
-.marketListContain {
-    border: 2px solid brown;
-    background: magenta;
-    width: 90%;
-    color: purple;
+@import "../../../static/variables";
 
-    .listHeader {
-        color: black;
+.marketListContain {
+    // border: 2px solid brown;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: $font-stack1;
+    font-size: $subheading2-size;
+    margin-bottom: $global-margin + 100;
+
+    .searchContain {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: $global-margin 0;
+
+        .listHeader {
+            font-size: $heading1-size - 6;
+
+            span {
+                font-weight: 600;
+            }
+        }
     }
 
     .catalogueContain {
-        border: 2px solid aqua;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: lightgray;
+        padding: 10px;
+
+
+        // .catalogueContain {
+        //     border: 2px solid aqua;
+        // }
     }
 }

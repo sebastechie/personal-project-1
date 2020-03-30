@@ -6,7 +6,7 @@ export default class HomeBanner extends Component {
         return (
             <section className={styles.bannerContain}>
                 <div>THIS IS SOME BIG TEXT ABOUT THIS MUCH</div>
-                <div>2</div>
+                <div></div>
             </section>
         )
     }

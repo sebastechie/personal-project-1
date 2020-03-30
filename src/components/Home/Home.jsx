@@ -30,7 +30,7 @@ export default class Home extends Component {
                         </div>
                         <div className={styles.textBody}>
                             <div>Embrace the change</div>
-                            <div>Here at FiNai, we are always looking for the next trend. Authentic, exotic, heroic - not necessarily in that order but you get the gist. Come join us!</div>
+                            <div>Here at dotCollection, we are always looking for the next best trend. Authentic, exotic, heroic - not necessarily in that order but you get the gist. Come and check us out!</div>
                         </div>
                     </div>
 

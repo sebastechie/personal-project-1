@@ -1,10 +1,41 @@
 @import "../../static/variables";
 
 .footerContain {
-    border: 2px solid aqua;
-    height: 200px;
-    background-color: lightgrey;
-    // color: yellow;
-    // margin: $global-margin;
-    // margin-bottom: 0;
+    // border: 2px solid aqua;
+    height: 300px;
+    margin: 0 $global-margin;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-stack2;
+
+
+    .innerContain {
+        width: 31%;
+
+        .footTitle {
+            border-bottom: 0.5px solid black;
+            padding: 20px 0;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footList {
+            // border: 2px solid yellow;
+            div {
+                margin-bottom: 15px;
+                transition: 0.5s;
+                
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+     
+        }
+    }
+
+
 }

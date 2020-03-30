@@ -1,7 +1,7 @@
 @import "../../static/variables";
 
 .navContain {
-    border: 2px solid blue;
+    // border: 2px solid blue;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -15,11 +15,24 @@
     // transition: top 0.3s;
     
     .itemContain {
-        border: 2px solid black;
+        // border: 2px solid black;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
     }
 
     .logoContain {
         font-size: $heading1-size;
+        border: none;
+        transition: 0.5s;
+        height: 100%;
+
+        &:hover {
+            // border-top: 0.5px solid red;
+            // border-bottom: 0.5px solid red;
+            transition: 0.5s;
+            cursor: none;
+        }
     }
 }

@@ -1,6 +1,72 @@
+@import "../../../static/variables";
+
 .profileContain {
-    background-color: purple;
-    height: 500px;
-    width: 500px;
-    color: white;
+    // border: 2px solid aqua;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $font-stack1;
+    margin-bottom: $global-margin + 200;
+
+    .innerContain {
+        //border: 2px solid red;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .imgContain {
+            background-color: yellow;
+            height: 500px;
+            width: 45%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .details {
+        //border: 2px solid purple;
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .wrap {
+            margin-bottom: 20px;
+
+            a {
+                text-decoration: none;
+                color: red;
+                transition: 0.5s;
+
+                &:hover {
+                    text-decoration: underline;
+                    transition: 0.5s;
+                    color: blue;
+                }
+            }
+        }
+
+        .title {
+            font-size: 16px;
+            color: grey;
+        }
+
+        .sub, .sub1 {
+            font-size: 22px;
+        }
+
+        .subdesc {
+            font-size: 17px;
+        }
+
+        // .sub1 {
+        //     font-size: $heading1-size;
+        // }
+    }
 }

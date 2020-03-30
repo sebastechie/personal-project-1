@@ -3,15 +3,17 @@
 .navitem {
     color: $primary;
     // border: 2px solid purple;
-    width: 100px;
+    // width: 150px;
     display: flex;
     align-items: center;
     font-size: $subheading2-size;
+    
 
     a {
         color: unset;
         text-decoration: none;
         transition: 1s;
+        
 
         &:hover {
             color: red;

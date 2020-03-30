@@ -10,10 +10,10 @@ export default class Navbar extends Component {
             <section className={styles.navContain}>
 
                 <div className={styles.itemContain}>
-                    <NavItem route="/home" name="homeyyy" />
-                    <NavItem route="/gallery" name="Gallgalls" />
-                    <NavItem route="/marketplace" name="KETKET" />
-                    <NavItem route="/contact" name="Contact" />
+                    <NavItem className={styles.navitem} route="/home" name="Home" />
+                    <NavItem className={styles.navitem} route="/marketplace" name="Marketplace" />
+                    <NavItem className={styles.navitem} route="/gallery" name="Friday Night 101" />
+                    {/* <NavItem route="/contact" name="Contact" /> */}
                     {/* <NavItem route="/productprofile" name="Profile temp" /> */}
                 </div>
 

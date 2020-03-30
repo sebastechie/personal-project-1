@@ -6,17 +6,17 @@ export default class SearchBar extends Component {
     render() {
         return (
             <section>
-                i am searchbar
-
-                <input
-                // type="text"
-                placeholder={"helloooo"}
-                value={this.props.before}
-                onChange={this.props.after}
-                
-                
-                
-                />
+                {/* <div>
+                    <p>What are you looking for?</p>
+                </div> */}
+                <div className={styles.searchContain}>
+                    <input
+                        className={styles.search}
+                        placeholder={"What are you looking for?"}
+                        value={this.props.before}
+                        onChange={this.props.after}
+                    />
+                </div>
             </section>
         )
     }
