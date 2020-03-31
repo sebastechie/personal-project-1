@@ -22,7 +22,10 @@ export default class Marketplace extends Component {
 
                         </div>
                         <div onClick={this.props.signIn} className={styles.button}>
-                            <button>SIGN IN</button>
+                            <div className={styles.btnContain}>
+                                <button>SIGN IN</button>
+                                {/* <button>REGISTER</button> */}
+                            </div>
                         </div>
                     </div>
                 </div>

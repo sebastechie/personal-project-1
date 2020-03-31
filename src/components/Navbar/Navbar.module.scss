@@ -25,13 +25,18 @@
     .logoContain {
         font-size: $heading1-size;
         border: none;
-        transition: 0.5s;
+        transition: 1s;
         height: 100%;
+        width: 20%;
+        text-align: center;
 
         &:hover {
             // border-top: 0.5px solid red;
             // border-bottom: 0.5px solid red;
-            transition: 0.5s;
+            transition: 1s;
+            background-color: #141414;
+            color: white;
+            
             cursor: none;
         }
     }

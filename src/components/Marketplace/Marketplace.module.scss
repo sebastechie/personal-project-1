@@ -63,13 +63,18 @@
                     &:hover {
                         background-color: darkgray;
                         // background-color: #4aaaff;
-                        transition: 1s;
+                        transition: 0.5s;
                         color: white;
                         cursor: pointer;
                         
                     }
                 }
             }
+        }
+
+        .sginIn {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
