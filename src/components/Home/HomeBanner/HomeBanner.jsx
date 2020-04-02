@@ -5,7 +5,7 @@ export default class HomeBanner extends Component {
     render() {
         return (
             <section className={styles.bannerContain}>
-                <div>THIS IS SOME BIG TEXT ABOUT THIS MUCH</div>
+                <div>VIEW OUR PRODUCTS IN OUR MARKETPLACE.</div>
                 <div></div>
             </section>
         )
